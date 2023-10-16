@@ -20,7 +20,9 @@ const config = {
   preprocess: vitePreprocess(),
 
   kit: {
-    adapter: adapter(),
+    adapter: adapter({
+      fallback: 'app.html', // may differ from host to host
+    }),
   },
 };
 
