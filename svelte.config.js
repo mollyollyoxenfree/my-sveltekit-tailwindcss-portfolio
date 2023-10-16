@@ -21,7 +21,7 @@ const config = {
 
   kit: {
     adapter: adapter({
-      fallback: 'index.html', // may differ from host to host
+      fallback: '200.html', // may differ from host to host
     }),
   },
 };
