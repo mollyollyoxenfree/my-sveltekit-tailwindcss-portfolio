@@ -10,6 +10,12 @@
   function goTop() {
     document.body.scrollIntoView()
   }
+
+  /** @type {import('@sveltejs/adapter-vercel').Config} */
+export const config = {
+	runtime: 'nodejs18.x'
+};
+
 </script>
 
 <div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
