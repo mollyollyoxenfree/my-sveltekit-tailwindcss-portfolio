@@ -11,6 +11,8 @@
     document.body.scrollIntoView()
   }
 
+  export const prerender = true;
+
 </script>
 
 <div class="relative flex flex-col max-w-[1400px] mx-auto w-full text-sm sm:text-base min-h-screen">
