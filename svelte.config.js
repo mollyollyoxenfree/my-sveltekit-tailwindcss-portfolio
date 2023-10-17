@@ -25,7 +25,7 @@ const config = {
     paths: {
       base:
         process.env.NODE_ENV === 'production'
-          ? '/mollyollyoxenfree/my-sveltekit-tailwindcss-portfolio/'
+          ? '/my-sveltekit-tailwindcss-portfolio'
           : '',
     },
   },
