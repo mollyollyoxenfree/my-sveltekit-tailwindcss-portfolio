@@ -11,41 +11,61 @@
 // export default config;
 ////////////////////////////////////////////////////
 
+// import adapter from '@sveltejs/adapter-static';
+// import { vitePreprocess } from '@sveltejs/kit/vite';
+
+// /** @type {import('@sveltejs/kit').Config} */
+// const config = {
+//   preprocess: vitePreprocess(),
+
+//   kit: {
+//     adapter: adapter({
+//       fallback: 'index.html',
+//     }),
+//     paths: {
+//       base:
+//         process.env.NODE_ENV === 'production'
+//           ? '/my-sveltekit-tailwindcss-portfolio'
+//           : '',
+//     },
+//   },
+// };
+
+// export default config;
+/////////////////////////////////////////////////////
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
+
+const dev = process.argv.includes('dev');
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   preprocess: vitePreprocess(),
-
   kit: {
-    adapter: adapter({
-      fallback: 'index.html', // may differ from host to host
-    }),
+    adapter: adapter(),
     paths: {
-      base:
-        process.env.NODE_ENV === 'production'
-          ? '/my-sveltekit-tailwindcss-portfolio'
-          : '',
+      base: dev ? '' : process.env.BASE_PATH,
     },
   },
 };
 
 export default config;
-/////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 // import adapter from '@sveltejs/adapter-static';
+// import { vitePreprocess } from '@sveltejs/kit/vite';
+
+// const dev = precess.argv.includes('dev');
 
 // /** @type {import('@sveltejs/kit').Config} */
 // const config = {
-//   kit: {
-//     adapter: adapter({
-//       fallback: '200.html',
-//     }),
-//   },
-// };
+//   preprocess: vitePreprocess(),
 
-// config.paths = {
-//   base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+//   kit: {
+//     adapter: adapter(),
+//     paths: {
+//       base: dev ? '' : <process className="env BASE_PATH"></process>,
+//     },
+//   },
 // };
 
 // export default config;
