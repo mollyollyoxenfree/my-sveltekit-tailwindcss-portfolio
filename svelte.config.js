@@ -50,16 +50,16 @@ const config = {
           ? '/my-sveltekit-tailwindcss-portfolio'
           : '',
     },
-    vite: {
-      css: {
-        postcss: {
-          plugins: {
-            tailwindcss: {},
-            autoprefixer: {},
-          },
-        },
-      },
-    },
+    // vite: {
+    //   css: {
+    //     postcss: {
+    //       plugins: {
+    //         tailwindcss: {},
+    //         autoprefixer: {},
+    //       },
+    //     },
+    //   },
+    // },
   },
 };
 
