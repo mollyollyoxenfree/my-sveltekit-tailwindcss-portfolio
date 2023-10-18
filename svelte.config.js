@@ -44,7 +44,11 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: dev ? '' : process.env.BASE_PATH,
+      // base: dev ? '' : process.env.BASE_PATH,
+      base:
+        process.env.NODE_ENV === 'production'
+          ? '/my-sveltekit-tailwindcss-portfolio'
+          : '',
     },
   },
 };
