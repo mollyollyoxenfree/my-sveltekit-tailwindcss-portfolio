@@ -1,5 +1,5 @@
 <script>
-      import { base } from '$app/paths';
+     
     export let y;
 
     let tabs = [
@@ -16,7 +16,7 @@
     </h1>
     <div class="sm:flex ml-auto pr-4 items-center gap-4 hidden">
         {#each tabs as tab, index}
-            <a href="{base}/" class="duration-200 hover:text-violet-400">
+            <a href= {tab.link} class="duration-200 hover:text-violet-400">
                 <p>{tab.name}</p>
             </a>
         {/each}
