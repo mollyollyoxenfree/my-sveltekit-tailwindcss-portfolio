@@ -31,8 +31,8 @@ const config = {
   kit: {
     adapter: adapter(),
     paths: {
-      base: '/my-sveltekit-tailwindcss-portfolio',
-      assets: '/my-sveltekit-tailwindcss-portfolio',
+      base: './my-sveltekit-tailwindcss-portfolio',
+      assets: './my-sveltekit-tailwindcss-portfolio',
     },
   },
 };
