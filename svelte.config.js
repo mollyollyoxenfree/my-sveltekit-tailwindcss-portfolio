@@ -49,10 +49,6 @@ const config = {
         process.env.NODE_ENV === 'production'
           ? '/my-sveltekit-tailwindcss-portfolio'
           : '',
-      assets:
-        process.env.NODE_ENV === 'production'
-          ? '/my-sveltekit-tailwindcss-portfolio'
-          : '',
     },
   },
 };
