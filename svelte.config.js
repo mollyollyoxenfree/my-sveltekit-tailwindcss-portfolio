@@ -47,7 +47,7 @@ const config = {
       // base: dev ? '' : process.env.BASE_PATH,
       base:
         process.env.NODE_ENV === 'production'
-          ? 'my-sveltekit-tailwindcss-portfolio'
+          ? '/my-sveltekit-tailwindcss-portfolio'
           : '',
     },
   },
